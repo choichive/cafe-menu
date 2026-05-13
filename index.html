@@ -44,11 +44,10 @@
       font-weight: 400;
     }
     header h1 {
-      font-family: 'Playfair Display', Georgia, serif;
+      font-family: 'Jua', sans-serif;
       font-size: 3.2rem;
-      font-weight: 600;
       color: var(--dark);
-      letter-spacing: 0.02em;
+      letter-spacing: 0.03em;
       line-height: 1.15;
     }
     .header-divider {
@@ -170,14 +169,21 @@
     .card-thumb {
       width: 100%;
       height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-thumb-contain {
+      object-fit: contain;
+      background: var(--bg);
+      padding: 0.5rem;
+    }
+    .thumb-coffee {
+      background: linear-gradient(150deg, #e2c09a, #a0714f);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 3.2rem;
     }
-    .thumb-coffee  { background: linear-gradient(150deg, #e2c09a, #a0714f); }
-    .thumb-drink   { background: linear-gradient(150deg, #b8d4b0, #6a9e6e); }
-    .thumb-dessert { background: linear-gradient(150deg, #edcfaa, #c49060); }
 
     .card-body { padding: 1.4rem 1.5rem 1.6rem; }
 
@@ -308,7 +314,7 @@
   <div class="menu-grid">
 
     <div class="menu-card" data-category="coffee">
-      <div class="card-thumb thumb-coffee">☕</div>
+      <img class="card-thumb" src="images/americano.jpg" alt="아메리카노">
       <div class="card-body">
         <p class="card-category">커피</p>
         <h2 class="card-name">아메리카노</h2>
@@ -318,7 +324,7 @@
     </div>
 
     <div class="menu-card" data-category="coffee">
-      <div class="card-thumb thumb-coffee">☕</div>
+      <img class="card-thumb" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&h=400&fit=crop" alt="카페라떼">
       <div class="card-body">
         <p class="card-category">커피</p>
         <h2 class="card-name">카페라떼</h2>
@@ -328,7 +334,7 @@
     </div>
 
     <div class="menu-card" data-category="coffee">
-      <div class="card-thumb thumb-coffee">☕</div>
+      <img class="card-thumb" src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop" alt="바닐라라떼">
       <div class="card-body">
         <p class="card-category">커피</p>
         <h2 class="card-name">바닐라라떼</h2>
@@ -338,7 +344,7 @@
     </div>
 
     <div class="menu-card" data-category="noncoffee">
-      <div class="card-thumb thumb-drink">🍵</div>
+      <img class="card-thumb" src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&h=400&fit=crop" alt="녹차라떼">
       <div class="card-body">
         <p class="card-category">논커피</p>
         <h2 class="card-name">녹차라떼</h2>
@@ -349,7 +355,7 @@
 
     <div class="menu-card" data-category="dessert">
       <span class="badge-best">Best</span>
-      <div class="card-thumb thumb-dessert">🎂</div>
+      <img class="card-thumb" src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&h=400&fit=crop" alt="당근케이크">
       <div class="card-body">
         <p class="card-category">디저트</p>
         <h2 class="card-name">당근케이크</h2>
@@ -359,7 +365,7 @@
     </div>
 
     <div class="menu-card" data-category="dessert">
-      <div class="card-thumb thumb-dessert">🍰</div>
+      <img class="card-thumb" src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&h=400&fit=crop" alt="티라미수">
       <div class="card-body">
         <p class="card-category">디저트</p>
         <h2 class="card-name">티라미수</h2>
@@ -369,7 +375,7 @@
     </div>
 
     <div class="menu-card" data-category="dessert">
-      <div class="card-thumb thumb-dessert">🥐</div>
+      <img class="card-thumb" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&h=400&fit=crop" alt="크로와상">
       <div class="card-body">
         <p class="card-category">디저트</p>
         <h2 class="card-name">크로와상</h2>
